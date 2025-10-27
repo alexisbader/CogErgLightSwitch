@@ -1,0 +1,80 @@
+.room {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.room-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.switch-outer {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.switch-inner {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.room-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Active state */
+.room.active .switch-outer {
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+}
+
+.room.active .switch-inner {
+  border-color: #4A90E2;
+  background: rgba(74, 144, 226, 0.1);
+}
+
+.room.active .room-label {
+  color: #4A90E2;
+}
+
+/* Active room styling - fill space between circles with blue */
+.room.active .switch-outer {
+  background: #4A90E2;
+  border-color: #4A90E2;
+}
+
+.room.active .switch-inner {
+  background: #4A90E2;
+  border-color: #4A90E2;
+}
+
+.room.active .room-label {
+  color: white;
+}
