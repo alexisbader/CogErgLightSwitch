@@ -16,12 +16,21 @@ const roomNameOptions = [
 
 /**
  * Get room name for a given room ID and position
- * @param {string} roomId - Room ID (office 1, office 2, etc. or legacy A, B, C, etc.)
+ * @param {string} roomId - Room ID (kitchen, bathroom, meeting room, etc. or legacy A, B, C, etc.)
  * @param {number} index - Index of the room (0-based)
  * @param {number} totalRooms - Total number of rooms
  * @returns {string} Room name
  */
 export const getRoomName = (roomId, index, totalRooms) => {
+  // If roomId is a commercial room type, format it nicely
+  const lowerId = roomId ? roomId.toLowerCase() : '';
+  if (lowerId === 'kitchen') return 'Kitchen';
+  if (lowerId === 'bathroom') return 'Bathroom';
+  if (lowerId === 'meeting room') return 'Meeting Room';
+  if (lowerId === 'reception') return 'Reception';
+  if (lowerId === 'break room') return 'Break Room';
+  if (lowerId === 'storage') return 'Storage';
+  
   // If roomId is already in "office X" format, capitalize it and return
   if (roomId && roomId.toLowerCase().startsWith('office ')) {
     const num = roomId.toLowerCase().replace('office ', '');
@@ -34,7 +43,7 @@ export const getRoomName = (roomId, index, totalRooms) => {
   const roomMappings = {
     4: ['Office A', 'Office B', 'Kitchen', 'Bathroom'],
     5: ['Office A', 'Office B', 'Kitchen', 'Bathroom', 'Conference Room'],
-    6: ['Office 1', 'Office 2', 'Office 3', 'Office 4', 'Office 5', 'Office 6'],
+    6: ['Kitchen', 'Bathroom', 'Meeting Room', 'Reception', 'Break Room', 'Storage'],
     7: ['Office A', 'Office B', 'Office C', 'Kitchen', 'Bathroom', 'Conference Room', 'Storage'],
     8: ['Office A', 'Office B', 'Office C', 'Kitchen', 'Bathroom', 'Conference Room', 'Break Room', 'Changeroom']
   };
@@ -64,6 +73,7 @@ export const getRoomType = (roomName) => {
   if (lowerName.includes('conference') || lowerName.includes('meeting')) return 'conference';
   if (lowerName.includes('storage')) return 'storage';
   if (lowerName.includes('changer')) return 'changeroom';
+  if (lowerName.includes('reception')) return 'office'; // Reception styled similar to office
   
   return 'office'; // Default
 };

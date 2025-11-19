@@ -7,12 +7,12 @@ const GroundTruthFloorPlan = () => {
   
   // Use room layout if available, otherwise default to 6 rooms
   const rooms = roomLayout?.rooms || [
-    { id: 'office 1', left: 0, top: 0, width: 267, height: 200 },
-    { id: 'office 2', left: 267, top: 0, width: 267, height: 200 },
-    { id: 'office 3', left: 534, top: 0, width: 266, height: 200 },
-    { id: 'office 4', left: 0, top: 200, width: 267, height: 200 },
-    { id: 'office 5', left: 267, top: 200, width: 267, height: 200 },
-    { id: 'office 6', left: 534, top: 200, width: 266, height: 400 }
+    { id: 'kitchen', left: 0, top: 0, width: 267, height: 200 },
+    { id: 'bathroom', left: 267, top: 0, width: 267, height: 200 },
+    { id: 'meeting room', left: 534, top: 0, width: 266, height: 200 },
+    { id: 'reception', left: 0, top: 200, width: 267, height: 200 },
+    { id: 'break room', left: 267, top: 200, width: 267, height: 200 },
+    { id: 'storage', left: 534, top: 200, width: 266, height: 400 }
   ];
   
   const taskType = currentCondition?.taskType || 'turnOn2';

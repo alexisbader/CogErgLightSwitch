@@ -14,7 +14,7 @@ const SwitchPanel = ({ onTaskComplete }) => {
     currentCondition
   } = useExperiment();
   
-  const areas = roomLayout?.roomIds || ['office 1', 'office 2', 'office 3', 'office 4', 'office 5', 'office 6'];
+  const areas = roomLayout?.roomIds || ['kitchen', 'bathroom', 'meeting room', 'reception', 'break room', 'storage'];
   
   const handleSwitchToggle = (areaId) => {
     if (!isTaskActive) return;

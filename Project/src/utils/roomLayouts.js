@@ -111,36 +111,36 @@ const generate5RoomLayout = (variation, width, height) => {
 const generate6RoomLayout = (variation, width, height) => {
   const layouts = [
     [
-      { id: 'office 1', left: 0, top: 0, width: width * 0.33, height: height * 0.33 },
-      { id: 'office 2', left: width * 0.33, top: 0, width: width * 0.33, height: height * 0.33 },
-      { id: 'office 3', left: width * 0.66, top: 0, width: width * 0.34, height: height * 0.33 },
-      { id: 'office 4', left: 0, top: height * 0.33, width: width * 0.33, height: height * 0.33 },
-      { id: 'office 5', left: width * 0.33, top: height * 0.33, width: width * 0.33, height: height * 0.33 },
-      { id: 'office 6', left: width * 0.66, top: height * 0.33, width: width * 0.34, height: height * 0.67 }
+      { id: 'kitchen', left: 0, top: 0, width: width * 0.33, height: height * 0.33 },
+      { id: 'bathroom', left: width * 0.33, top: 0, width: width * 0.33, height: height * 0.33 },
+      { id: 'meeting room', left: width * 0.66, top: 0, width: width * 0.34, height: height * 0.33 },
+      { id: 'reception', left: 0, top: height * 0.33, width: width * 0.33, height: height * 0.33 },
+      { id: 'break room', left: width * 0.33, top: height * 0.33, width: width * 0.33, height: height * 0.33 },
+      { id: 'storage', left: width * 0.66, top: height * 0.33, width: width * 0.34, height: height * 0.67 }
     ],
     [
-      { id: 'office 1', left: 0, top: 0, width: width * 0.5, height: height * 0.25 },
-      { id: 'office 2', left: width * 0.5, top: 0, width: width * 0.5, height: height * 0.25 },
-      { id: 'office 3', left: 0, top: height * 0.25, width: width * 0.25, height: height * 0.75 },
-      { id: 'office 4', left: width * 0.25, top: height * 0.25, width: width * 0.375, height: height * 0.375 },
-      { id: 'office 5', left: width * 0.625, top: height * 0.25, width: width * 0.375, height: height * 0.375 },
-      { id: 'office 6', left: width * 0.25, top: height * 0.625, width: width * 0.75, height: height * 0.375 }
+      { id: 'kitchen', left: 0, top: 0, width: width * 0.5, height: height * 0.25 },
+      { id: 'bathroom', left: width * 0.5, top: 0, width: width * 0.5, height: height * 0.25 },
+      { id: 'meeting room', left: 0, top: height * 0.25, width: width * 0.25, height: height * 0.75 },
+      { id: 'reception', left: width * 0.25, top: height * 0.25, width: width * 0.375, height: height * 0.375 },
+      { id: 'break room', left: width * 0.625, top: height * 0.25, width: width * 0.375, height: height * 0.375 },
+      { id: 'storage', left: width * 0.25, top: height * 0.625, width: width * 0.75, height: height * 0.375 }
     ],
     [
-      { id: 'office 1', left: 0, top: 0, width: width * 0.3, height: height * 0.4 },
-      { id: 'office 2', left: width * 0.3, top: 0, width: width * 0.35, height: height * 0.4 },
-      { id: 'office 3', left: width * 0.65, top: 0, width: width * 0.35, height: height * 0.4 },
-      { id: 'office 4', left: 0, top: height * 0.4, width: width * 0.2, height: height * 0.6 },
-      { id: 'office 5', left: width * 0.2, top: height * 0.4, width: width * 0.4, height: height * 0.3 },
-      { id: 'office 6', left: width * 0.6, top: height * 0.4, width: width * 0.4, height: height * 0.6 }
+      { id: 'kitchen', left: 0, top: 0, width: width * 0.3, height: height * 0.4 },
+      { id: 'bathroom', left: width * 0.3, top: 0, width: width * 0.35, height: height * 0.4 },
+      { id: 'meeting room', left: width * 0.65, top: 0, width: width * 0.35, height: height * 0.4 },
+      { id: 'reception', left: 0, top: height * 0.4, width: width * 0.2, height: height * 0.6 },
+      { id: 'break room', left: width * 0.2, top: height * 0.4, width: width * 0.4, height: height * 0.3 },
+      { id: 'storage', left: width * 0.6, top: height * 0.4, width: width * 0.4, height: height * 0.6 }
     ],
     [
-      { id: 'office 1', left: 0, top: 0, width: width * 0.4, height: height * 0.5 },
-      { id: 'office 2', left: width * 0.4, top: 0, width: width * 0.3, height: height * 0.5 },
-      { id: 'office 3', left: width * 0.7, top: 0, width: width * 0.3, height: height * 0.5 },
-      { id: 'office 4', left: 0, top: height * 0.5, width: width * 0.33, height: height * 0.5 },
-      { id: 'office 5', left: width * 0.33, top: height * 0.5, width: width * 0.33, height: height * 0.5 },
-      { id: 'office 6', left: width * 0.66, top: height * 0.5, width: width * 0.34, height: height * 0.5 }
+      { id: 'kitchen', left: 0, top: 0, width: width * 0.4, height: height * 0.5 },
+      { id: 'bathroom', left: width * 0.4, top: 0, width: width * 0.3, height: height * 0.5 },
+      { id: 'meeting room', left: width * 0.7, top: 0, width: width * 0.3, height: height * 0.5 },
+      { id: 'reception', left: 0, top: height * 0.5, width: width * 0.33, height: height * 0.5 },
+      { id: 'break room', left: width * 0.33, top: height * 0.5, width: width * 0.33, height: height * 0.5 },
+      { id: 'storage', left: width * 0.66, top: height * 0.5, width: width * 0.34, height: height * 0.5 }
     ]
   ];
   return layouts[variation] || layouts[0];
@@ -238,9 +238,9 @@ const generate8RoomLayout = (variation, width, height) => {
 
 // Get room IDs for a given number of rooms
 export const getRoomLetters = (numRooms) => {
-  // Since we always use 6 rooms now, return office 1-6
-  const officeIds = ['office 1', 'office 2', 'office 3', 'office 4', 'office 5', 'office 6'];
-  return officeIds.slice(0, numRooms);
+  // Since we always use 6 rooms now, return commercial room types
+  const roomIds = ['kitchen', 'bathroom', 'meeting room', 'reception', 'break room', 'storage'];
+  return roomIds.slice(0, numRooms);
 };
 
 // Generate a random room layout for a trial
